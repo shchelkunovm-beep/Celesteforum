@@ -1,7 +1,176 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="main.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    font-family:"open sans",sans-serif;
+}
+a {
+    color: white;
+    text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+body{
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-repeat: no-repeat;    
+  background-size: cover;          
+  background-attachment: fixed;   
+  background-position: center;
+}
+header {
+    background-color: #5b3a3b;
+  display: flex; /* Включаем гибкий контейнер */
+  align-items: center; /* Выравнивает всё по вертикали (по центру) */
+  justify-content:space-between; /* Логотип слева, меню справа */
+  padding: 10px 0px;
+  position: sticky;
+  top:0;
+  width: 100%;
+}
+.container{
+    width: 1400px;
+    margin: 0% auto;
+}
+header .logo{
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: #af644a;
+    border-radius: 20px;
+}
+header nav{
+    float: right;
+    width: 50;
+}
+header nav ul{
+    display: flex;
+    list-style:none;
+    justify-content:space-between;
+}
+.forum-layout {
+            margin-left: 200px;
+            display: flex;
+            width: 95%;          
+            max-width: 1400px;  
+            gap: 20px;          
+            align-items: flex-start;
+            margin-top: 300px;
+            margin-bottom: 100px; 
+          }
+
+.main-container {
+            flex: 3;            
+            background-color: rgba(60, 40, 40, 0.9); 
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+/* Верхняя плашка */
+.header-box {
+    background-color: #b06040; /* Светло-коричневый */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    flex-basis: 66; /* Закругление только сверху для стиля */
+}
+
+/* Блок с плейсхолдером */
+.content-box {
+    background-color: #b06040;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* Ряд с аватаркой */
+.top-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: white; /* Чтобы было видно, если картинка не грузится */
+}
+
+/* Текст снизу по центру */
+.bottom-row {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* Главная обертка, которая ставит блоки в ряд */
+.page-layout {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px;               
+    padding: 20px;
+    width: 100%;
+}
+
+
+.main-content {
+    flex: 3;
+    max-width: 800px;
+    background-color: rgba(60, 40, 40, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+.sidebar-right {
+    margin-top: 400px;
+            flex: 1;             /* Занимает 1 часть пространства */
+            display: flex;
+            flex-direction: column; /* Ставит карточки внутри ДРУГ ПОД ДРУГА */
+            gap: 20px;          /* Отступ МЕЖДУ карточками сайдбара */
+        }
+
+        /* СТИЛЬ ОБЩЕЙ КАРТОЧКИ САЙДБАРА */
+        .sidebar-card {
+            background-color: rgba(60, 40, 40, 0.9);
+            border-radius: 10px;
+            padding: 15px;
+            min-height: 250px;  /* Примерная высота */
+        }
+
+        /* Шапка карточки сайдбара (как на скрине) */
+        .sidebar-header {
+            background-color: #b06040;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 20px; /* Закругление как на картинке */
+            font-size: 18px;
+            line-height: 1.2;
+            margin-bottom: 10px; /* Отступ от шапки до контента карточки */
+        }
+footer{
+    background-color: black;
+    text-align: left;
+    display: flex;
+    position: sticky;
+    padding: 10px 20px;
+    width:100%;
+    height: 100%;
+}
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сеleste</title>
